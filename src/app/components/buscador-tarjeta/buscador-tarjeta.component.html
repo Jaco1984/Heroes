@@ -1,0 +1,11 @@
+<div class="card">
+    <img class="card-img-top" [src]="heroe.img" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{heroe.nombre}}</h5>
+        <p class="card-text">{{heroe.bio}}</p>
+        <p class="card-text">{{heroe.aparicion}}</p>
+    </div>
+    <button (click)="getId()" type="button" class="btn btn-bd-primary btn-block">Ver Mas</button>
+
+    <!-- <a [routerLink]="['/informacion-heroe', i]">Ver Mas</a> -->
+</div>

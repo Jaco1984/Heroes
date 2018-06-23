@@ -1,0 +1,14 @@
+<h1>Heroes</h1> <small>{{ termino }}</small>
+
+<div class="row">
+    <div class="col-md-12" *ngIf="heroes.length == 0">
+        <div class="alert-info" role="alert">
+            No existen busquedas disponibles con el termino: "{{termino}}"
+        </div>
+
+    </div>
+</div>
+<!-- *ngFor="let heroe of heroes; let i = index" -->
+<div class="card-columns">
+    <app-buscador-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes"></app-buscador-tarjeta>
+</div>
